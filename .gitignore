@@ -1,0 +1,52 @@
+# Drupal
+web/*
+!web/sites/
+web/sites/example.sites.php
+web/sites/README.txt
+web/sites/*/settings.php
+
+# Ignore libraries, but keep libraries directory.
+web/sites/*/libraries/*
+!web/sites/*/libraries/.gitkeep
+
+# Ignore all modules except custom and site specific feature modules.
+web/sites/*/modules/*
+!web/sites/*/modules/contrib/
+web/sites/*/modules/contrib/*
+!web/sites/*/modules/contrib/.gitkeep
+!web/sites/*/modules/custom*
+!web/sites/*/modules/features*
+
+# Ignore all themes except custom themes.
+web/sites/*/themes/*
+!web/sites/*/themes/contrib/
+web/sites/*/themes/contrib/*
+!web/sites/*/themes/contrib/.gitkeep
+!web/sites/*/themes/custom*
+
+# User Generated Content
+web/files
+web/sites/*/files
+web/sites/*/private
+
+vendor/*
+!vendor/.gitkeep
+
+# OS specific temporary files
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+
+# IDEs
+.buildpath
+.idea
+.project
+.settings
+*.esproj
+*.komodoproject
+*.komodotools
+nbproject
+
+# Tools
+.svn
+.sass-cache
